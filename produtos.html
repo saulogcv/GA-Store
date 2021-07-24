@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        PÁGINA DE PRODUTOS - GAStore
+    </title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<header>
+    <form action="/clientes.html">
+        <button type="submit" value="Página de Produto" />IR PARA BANCO DE CLIENTES</button>
+    </form>
+</header>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>NOME DO PRODUTO*</label><label class="validation-error hide" id="nomeProdutoErro">Esse campo é obrigatório.</label>
+                        <input type="text" name="nomeProd" id="nomeProd">
+                    </div>
+                    <div>
+                        <label>ID</label>
+                        <input type="text" name="idCod" id="idCod">
+                    </div>
+                    <div>
+                        <label>QUANTIDADE</label>
+                        <input type="text" name="qtde" id="qtde">
+                    </div>
+                    <div>
+                        <label>PREÇO</label>
+                        <input type="text" name="preco" id="preco">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="CADASTRAR">
+                    </div>
+                </form>
+            </td>
+            </tr>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>NOME PRODUTO</th>
+                            <th>CODIGO</th>
+                            <th>QUANTIDADE</th>
+                            <th>PREÇO/un (R$)</th>
+                            <th></th>   
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+  
+    <script src="js/script.js"></script>
+</body>
+<footer>
+    <p> ____<br>
+        <br>
+        Desenvolvido por <a href="https://www.linkedin.com/in/sauloguedes/">@sauloguedes</a>    </p>
+    </footer>
+</html>

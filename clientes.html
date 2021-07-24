@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        PÁGINA DE CLIENTES - GAStore
+    </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="author" content="Saulo Guedes Cruz de Vasconcelos">
+    <meta name="description" content="CADASTRO CLIENTES E PRODUTOS">
+</head>
+
+<header>
+    <form action="/produtos.html">
+        <button type="submit" value="Página de Produtos" />IR PARA ESTOQUE DE PRODUTOS</button>
+    </form>
+</header>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>NOME DO CLIENTE:</label><label class="validation-error hide" id="nomeClienteErro">Esse campo é obrigatório.</label>
+                        <input type="text" name="nomeCliente" id="nomeCliente">
+                    </div>
+                    <div>
+                        <label>CPF:</label>
+                        <input placeholder="XXX.XXX.XXX-XX" type="text" name="cpf" id="cpf">
+                    </div>
+                    <div>
+                        <label>CEP:</label>
+                        <input placeholder="XXXXXX-XX" type="text" name="cep" id="cep">
+                    </div>
+                    <div>
+                        <label>ENDEREÇO:</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                    <div>
+                        <label>EMAIL:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>TELEFONE</label>
+                        <input placeholder="(XX)XXXXX-XXXX" type="text" name="telefone" id="telefone">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="CADASTRAR">
+                    </div>
+                </form>
+            </td>
+            </tr>
+            <td>
+                <table class="list" id="clienteLista">
+                    <thead>
+                        <tr>
+                            <th>NOME CLIENTE</th>
+                            <th>CPF</th>
+                            <th>CEP</th>
+                            <th>ENDEREÇO</th>
+                            <th>EMAIL</th>
+                            <th>TELEFONE</th>
+                            <th></th>   
+                    </thead>
+                    <tbody>
+                    </tbody>                    
+                </table>
+            </td>
+        </tr>
+    </table>
+   <script src="/js/prodScript.js"></script>
+</body>
+
+<footer>
+        <p> ____<br>
+            <br>
+            Desenvolvido por <a href="https://www.linkedin.com/in/sauloguedes/">@sauloguedes</a>    </p>
+</footer>
+</html>
